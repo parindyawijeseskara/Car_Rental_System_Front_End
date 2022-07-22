@@ -1,0 +1,61 @@
+.navbar-brand{
+    font-size: 24px;
+    right: 30px;
+
+}
+
+.navbar a{
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+
+}
+.nav a {
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+}
+.content{
+    height: 70vh;
+}
+
+.content h1{
+    font-size: 45px;
+    padding: 40px;
+    color: #249876;
+
+
+}
+.content h2{
+    color: white;
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 50px;
+    /*margin: 60px 0;*/
+    margin-left: 65px;
+    font-family: 'Lobster Two', cursive;
+
+}
+
+.car-image{
+    width: 50%;
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    animation: run 2s linear 1;
+
+
+    /*background-color: black;*/
+
+}
+
+@keyframes run {
+    0%{
+        transform: translate(-100px,-100px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
