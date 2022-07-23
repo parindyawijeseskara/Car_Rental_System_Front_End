@@ -383,8 +383,175 @@ form.sign-up-form{
     justify-self: center;
     justify-content: center;
     margin-left: 30%;
+}
+/**-----------features */
+.features-container{
+    padding-top: 1rem;
 
 }
+.featured-filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+.featured-item{
+    width: 48px;
+    height:48px;
+    border: none;
+    outline: none;
+    padding: .75rem;
+    border-radius: .75rem;
+    background-color: #1C1C1C;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.featured-item img{
+    width: 1.5rem;
+
+}
+.featured-item span,
+.featured-item img{
+    opacity: .3;
+    transition: .3s;
+}
+.featured-item:hover{
+    background-color: #0d6efd;
+}
+.featured-item:hover span,
+.featured-item:hover img{
+    opacity: 1;
+}
+
+.featured-content{
+    color: white;
+    grid-template-columns: 230px;
+    row-gap: 1.5rem;
+    justify-content: center;
+
+}
+.grid {
+    display: grid;
+    gap: 1.5rem;
+
+
+}
+.featured-card{
+    width: 320px;
+    position: relative;
+    background-color: #1C1C1C;
+    row-gap: 1.5rem;
+
+    padding: 2rem 3.5rem;
+    border-radius: 1rem;
+}
+.featured-card.shape-smaller{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+.featured-title,
+.featured-subtitle,
+.featured-img{
+    position: relative;
+}
+.featured-title{
+    color: white;
+    font-size: 21px;
+    margin-bottom: .25rem;
+}
+.featured-subtitle{
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+.featured-img{
+    width: 220px;
+    margin: 1.5rem 0;
+    transition: .3s;
+
+}
+.featured-price{
+    font-size: 20px;
+}
+.featured-button{
+    color: white;
+    background-color: #249876;
+    border: none;
+    outline: none;
+    padding: .75rem 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
+}
+.featured-button i{
+    font-size: 1.25rem;
+}
+.featured-card:hover.featured-img{
+    transform: translateX(-.25rem);
+
+}
+
+/**Active link featured*/
+.active-featured{
+    background-color: #249876;
+
+}
+.active-featured span,
+.active-featured img{
+    opacity: 1;
+}
+.features-container{
+    padding: 2rem 0 3rem;
+}
+
+.featured-img{
+    width: 200px;
+}
+.features-container{
+    padding-bottom: 2.5rem;
+}
+.featured-filters{
+    column-gap: 2rem;
+    margin-bottom: 4.5rem;
+}
+.featured-item{
+    width: 52px;
+    height: 52px;
+}
+.featured-item img{
+    width: 2rem;
+}
+.featured-content{
+    grid-template-columns: repeat(3,230px);
+    row-gap: 4rem;
+    column-gap: 9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
