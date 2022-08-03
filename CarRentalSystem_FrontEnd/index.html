@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Car Rental</title>
+    <link href='src/assets/fonts/css/all.css' rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="src/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/assets/styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+<main style="background-color: black">
+        <header>
+            <section class="container-fluid " style="background-color: black" >
+                <nav class="navbar navbar-light row">
+                    <div class="container-fluid col">
+                        <a class="navbar-brand text-white fw-bold" href="#" style="color: #249876">
+                            <img alt="" class="d-inline-block align-text-top" height="38" width="60"
+                                 src="src/assets/img/car-icon.png">
+                            EASY CAR RENTAL
+                        </a>
+
+                    </div>
+
+                    <section class="col m-1 d-flex justify-content-end">
+                        <a href="#"><i class="fa fa-fw fa-user fw-bold"></i> Login</a>
+                        <a href="#"><i class="fas fa-sign-in-alt"></i> Sign Up</a>
+                    </section>
+
+                </nav>
+            </section>
+
+            <section id="navBar" style="background-color:#1C1C1C" >
+                <nav class="nav justify-content-end ">
+                    <a class="nav-link link-light fw-bold" href="#" id="HomeLink">Home</a>
+                    <a class="nav-link link-light fw-bold" href="#" id="AboutLink">About</a>
+                    <a class="nav-link link-light fw-bold" href="#" id="CarsLink">Cars</a>
+                    <a class="nav-link link-light fw-bold" href="#" id="GalleryLink">Gallery</a>
+                    <a class="nav-link link-light fw-bold" href="#" id="ServicesLink">Services</a>
+                    <a class="nav-link link-light fw-bold" href="#" id="ContactLink">Contact</a>
+
+                </nav>
+            </section>
+        </header>
+
+    <!--Home Page Content-->
+        <section class="container-fluid mt-lg-2" id="Home" style="background-color:palegreen;height: 60vh">
+            <section class="row  justify-content-around"style="background-color:black;margin-top: -10px;height: 60vh">
+                <div class="col-12 col-md-4"style="background-color: black;height: 60vh">
+                    <h1 style="margin-top: 20px;font-family: 'Be Vietnam Pro', sans-serif;color:#249876 ">Welcome To Easy Car Rentals</h1>
+                    <h2 style="margin-top: 30px;font-family: 'Be Vietnam Pro', sans-serif;color: white ">Rent The Best Quality </h2>
+                    <h2 style="font-family: 'Be Vietnam Pro', sans-serif;color: white" >Car's With Us</h2>
+                </div>
+
+                <div class="col-12 col-md-5"style="background-color:black;height: 60vh">
+                    <img src="src/assets/img/car.png" class="car-image">
+                </div>
+            </section>
+        </section >
+
+
+        <!--Login Page Content-->
+        <section class="container-fluid" id="Login" style="background-color:black;margin-top: 30px" >
+            <div class="containerOne">
+                <div class="forms-container">
+                    <div class="signin-signup">
+                        <form action="#" class="sign-in-form">
+                            <h2 class="title">Sign in</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Username" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Password" />
+                            </div>
+                            <input type="submit" value="Login" class="btn solid" />
+                            <p class="social-text">Or Sign in with social platforms</p>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </form>
+
+                        <form  enctype="multipart/form-data" id="userForm" name="userForm" class="sign-up-form" style="background-color: #dc3545">
+                            <h2 class="title">Sign up</h2>
+<!--                            <div class="input-field">-->
+<!--                                <i class="fas fa-user"></i>-->
+<!--                                <input class="form-control" type="text" placeholder="Username" id="userName" name="userName">-->
+<!--                            </div>-->
+<!--                            <div class="input-field">-->
+<!--                                <i class="fas fa-envelope"></i>-->
+<!--                                <input class="form-control" type="text" placeholder="Email" id="email" name="email">-->
+<!--                            </div>-->
+<!--                            <div class="input-field">-->
+<!--                                <i class="fas fa-lock"></i>-->
+<!--                                <input class="form-control" type="password" placeholder="Password" id="password" name="password">-->
+<!--                            </div>-->
+<!--                            <div class="input-field">-->
+<!--                                <i class="fas fa-user"></i>-->
+<!--                                <input class="form-control" type="text" placeholder="Address" id="address" name="address">-->
+<!--                            </div>-->
+<!--                            <div class="input-field">-->
+<!--                                <i class="fas fa-user"></i>-->
+<!--                                <input class="form-control" type="text" placeholder="License No" id="licenseNo" name="licenseNo">-->
+<!--                            </div>-->
+<!--                            <input class="form-control" type="file" id="myFile1" name="myFile1" >-->
+
+
+<!--                            <div class="input-field">-->
+<!--                                <i class="fas fa-user"></i>-->
+<!--                                <input class="form-control" type="text" placeholder="Nic" id="nic" name="nic">-->
+<!--                            </div>-->
+<!--                            <input class="form-control"type="file" id="myFile2" name="myFile2">-->
+
+<!--                            <div class="input-field">-->
+<!--                                <i class="fas fa-user"></i>-->
+<!--                                <input class="form-control" type="text" placeholder="Contact No" id="contactNo" name="contactNo">-->
+<!--                            </div>-->
+<!--&lt;!&ndash;                            <input type="submit" value="Register" onchange="saveUser()" class="btn solid" id="btnUser" name="btnUser">&ndash;&gt;-->
+<!--                            <button class="btn btn-outline-danger" onclick="saveUser()" name="btnUser" id="btnUser" type="submit">Register</button>-->
+
+                            <div class="col-4">
+                                <label for="txtUserName">UserName</label>
+                                <input type="text" id="txtUserName" class="form-control" name="userName">
+                            </div>
+                            <div class="col-4">
+                                <label for="txtEmail">Email</label>
+                                <input type="text" id="txtEmail" class="form-control" name="email">
+                            </div>
+                            <div class="col-4">
+                                <label for="txtPassword">Password</label>
+                                <input type="text" id="txtPassword" class="form-control" name="password">
+                            </div>
+                            <div class="col-4">
+                                <label for="txtAddress">Address</label>
+                                <input type="text" id="txtAddress" class="form-control" name="address">
+                            </div>
+                            <div class="col-4">
+                                <label for="txtLicenseNo">LicenseNo</label>
+                                <input type="text" id="txtLicenseNo" class="form-control" name="licenseNo">
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label" for="licenseImg">License Image</label>
+                                <input class="form-control" type="file" id="licenseImg" name="licenseImg">
+                            </div>
+                            <div class="col-4">
+                                <label for="txtNic">Nic</label>
+                                <input type="text" id="txtNic" class="form-control" name="nic">
+                            </div>
+                            <div class="col-4">
+                                <label class="form-label" for="nicImg">Nic Image</label>
+                                <input class="form-control" type="file" id="nicImg" name="nicImg">
+                            </div>
+                            <div class="col-4">
+                                <label for="txtContactNo">ContactNo</label>
+                                <input type="text" id="txtContactNo" class="form-control" name="contactNo">
+                            </div>
+                            <div class="col-2">
+                                <label for="cmbUserType">User Type</label>
+                                <select id="cmbUserType" class="form-select" name="userType">
+                                    <option>CUSTOMER</option>
+                                </select>
+                            </div>
+
+                            <div class="col-4">
+                                <button class="btn btn-outline-danger" onclick="saveUser()" name="btnSaveUser" id="btnSaveUser" type="button">Register</button>
+                            </div>
+
+
+                            <p class="social-text">Or Sign Up with Social Platforms</p>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="div-container">
+                    <div class="div left-div">
+                        <div class="contentOne">
+                            <h3>New here ?</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+                                ex ratione. Aliquid!
+                            </p>
+                            <button class="btn transparent" id="sign-up-btn">
+                                Sign up
+                            </button>
+                        </div>
+                        <img src="src/assets/img/signUp.svg" class="image2" alt="" />
+                    </div>
+
+                    <div class="div right-div">
+                        <div class="contentOne">
+                            <h3>One of us ?</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                laboriosam ad deleniti.
+                            </p>
+                            <button class="btn transparent" id="sign-in-btn">
+                                Sign in
+                            </button>
+                        </div>
+<!--                        <img src="assets/img/signIn.svg"  class="image2" alt="" >-->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--About Page Content -->
+        <section class="features section" id="About" style="background-color: black; height: 258vh" >
+            <h2 class="section-title">
+                Why Choose Us
+            </h2>
+
+            <div class="features-container containers grid" style="background-color: black">
+                <div class="features-group justify-content-center">
+                    <img src="src/assets/img/about.png" alt="" class="features-img">
+
+                    <div class="featuresCard features-card1">
+                        <p class="featuresCard-description">Variety of<br>Car Brands</p>
+                    </div>
+                    <div class="featuresCard features-card2">
+                        <p class="featuresCard-description">Best rate<br>Gurantee</p>
+                    </div>
+                    <div class="featuresCard features-card3">
+                        <p class="featuresCard-description">Awesome Customer<br>support</p>
+                    </div>
+                </div>
+            </div>
+            <img src="src/assets/img/map.svg" alt="" class="features-map">
+
+            <section class="featured section" id="featured" style="background-color: black">
+                <h2 class="section-title">
+                    Variety Of Cars
+                </h2>
+
+                <div class="features-container container">
+                    <ul class="featured-filters">
+                        <li>
+                            <button class="featured-item active-featured"data-filter="all">
+                                <span>All</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured-item"data-filter=".suzuki">
+                                <img src="src/assets/img/suzuki.png" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured-item"data-filter=".toyota">
+                                <img src="src/assets/img/toyota.png" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured-item"data-filter=".logo6">
+                                <img src="src/assets/img/logo6.png" alt="">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="featured-content grid"style="background-color:black;">
+                        <article class="featured-card mix suzuki">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="featured-title">Perodua Axia</h1>
+
+                            <h3 class="featured-subtitle">General Car</h3>
+
+                            <img src="src/assets/img/featured1.png" alt="" class="featured-img">
+
+                            <h3 class="featured-price">90,200</h3>
+
+                            <button class="button featured-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured-card mix toyota">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="featured-title">Perodua Bezza Prime Sedan</h1>
+
+                            <h3 class="featured-subtitle">Premium Car</h3>
+
+                            <img src="src/assets/img/featured2.png" alt="" class="featured-img">
+
+                            <h3 class="featured-price">120,330</h3>
+
+                            <button class="button featured-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured-card mix toyota">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="featured-title">Toyota Allion NZT 260</h1>
+
+                            <h3 class="featured-subtitle">Premium Car</h3>
+
+                            <img src="src/assets/img/featured3.png" alt="" class="featured-img">
+
+                            <h3 class="featured-price">155,760</h3>
+
+                            <button class="button featured-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured-card mix logo6">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="featured-title">BMW i8 </h1>
+
+                            <h3 class="featured-subtitle">Luxury Car</h3>
+
+                            <img src="src/assets/img/featured4.png" alt="" class="featured-img">
+
+                            <h3 class="featured-price">300,000</h3>
+
+                            <button class="button featured-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured-card mix logo6">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="featured-title">Mercedes</h1>
+
+                            <h3 class="featured-subtitle">Luxury Car</h3>
+
+                            <img src="src/assets/img/featured5.png" alt="" class="featured-img">
+
+                            <h3 class="featured-price">300,000</h3>
+
+                            <button class="button featured-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <!--Cars-->
+<!--        <section class="container-fluid"style="background-color: #dc3545;margin-top: -10px";>-->
+            <section class="car section" id="car" style="background-color: black;margin-top: -12px">
+
+                <div class="search">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                                <select class="custom-select px-4">
+                                    <option selected>No of Passengers</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+
+                                </select>
+                            </div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                                <select class="custom-select px-4">
+                                    <option selected>Transmission type</option>
+                                    <option value="1">Auto</option>
+                                    <option value="2">Manual</option>
+                                </select>
+                            </div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                                <select class="custom-select px-4">
+                                    <option selected>Brand</option>
+                                    <option value="1">Manual</option>
+                                    <option value="2">Manual</option>
+
+                                </select>
+                            </div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                                <select class="custom-select px-4">
+                                    <option selected>Fuel Type</option>
+                                    <option value="1">Petrol</option>
+                                    <option value="2">Diesel</option>
+                                </select>
+                            </div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                                <button class="btn btn-primary btn-block" type="submit" style="height: 50px;">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <h2 class="section-title">
+                    Variety Of Cars
+                </h2>
+
+                <div class="car-container container"style="background-color: black">
+                    <ul class="car-filters">
+                        <li>
+                            <button class="car-item active-featured"data-filter="all">
+                                <span>All</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="car-item"data-filter=".general">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="car-item"data-filter=".premium">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="car-item"data-filter=".luxury">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="car-content grid"style="background-color:black;">
+                        <article class="car-card mix suzuki">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="car-title">Suzuki Alto - Premium</h1>
+
+                            <h3 class="car-subtitle">General Car</h3>
+                            <img src="src/assets/img/suzuki%20Perodua.png" alt="" class="content-img">
+
+
+<!--                            <div class="slideshow-container">-->
+
+<!--                                &lt;!&ndash; Full-width images with number and caption text &ndash;&gt;-->
+<!--                                <div class="mySlides fade"style="background-color: wheat">-->
+
+<!--                                    <img src="assets/img/suzuki%20Perodua.png" alt="" class="content-img">-->
+<!--                                    <div class="text"></div>-->
+<!--                                </div>-->
+
+<!--                                <div class="mySlides fade">-->
+<!--                                    <img src="assets/img/BMW%20i8.png"alt="" class="content-img" >-->
+<!--                                    <div class="text"></div>-->
+<!--                                </div>-->
+
+<!--                                <div class="mySlides fade">-->
+<!--                                    <img src="assets/img/Bezza%20Prime%20Sedan.png" alt="" class="content-img">-->
+<!--                                    <div class="text"></div>-->
+<!--                                </div>-->
+
+<!--                                &lt;!&ndash; Next and previous buttons &ndash;&gt;-->
+<!--                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>-->
+<!--                                <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+<!--                            </div>-->
+<!--                            <br>-->
+
+<!--                            &lt;!&ndash; The dots/circles &ndash;&gt;-->
+<!--                            <div style="text-align:center">-->
+<!--                                <span class="dot" onclick="currentSlide(1)"></span>-->
+<!--                                <span class="dot" onclick="currentSlide(2)"></span>-->
+<!--                                <span class="dot" onclick="currentSlide(3)"></span>-->
+<!--                            </div>-->
+
+                            <div class="featured-car-card">
+
+                                <ul class="card-list">
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="people-outline"></ion-icon>
+
+                                        <span class="card-item-text">4 People</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="flash-outline"></ion-icon>
+
+                                        <span class="card-item-text">Manual</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="speedometer-outline"></ion-icon>
+
+                                        <span class="card-item-text">Petrol / 1-litre</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                        <span class="card-item-text">Automatic</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-price-wrapper">
+
+                                    <p class="card-price">
+                                        <strong>$64,350.00</strong> / monthly
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button car-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+
+
+
+                        <article class="car-card mix premium">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="car-title">Toyota Corolla Axio/ NZE141</h1>
+
+                            <h3 class="car-subtitle">Premium Car</h3>
+
+                            <img src="src/assets/img/Toyota%20Prius%20C%20Aqua.png" alt="" class="content-img">
+
+
+                            <div class="featured-car-card">
+
+                                <ul class="card-list">
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="people-outline"></ion-icon>
+
+                                        <span class="card-item-text">4 People</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="flash-outline"></ion-icon>
+
+                                        <span class="card-item-text">Auto</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="speedometer-outline"></ion-icon>
+
+                                        <span class="card-item-text">Petrol / 1-litre</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                        <span class="card-item-text">Automatic</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-price-wrapper">
+
+                                    <p class="card-price">
+                                        <strong>$120,330.00</strong> / monthly
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="button car-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+
+                        <article class="car-card mix premium">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="car-title">Perodua Bezza Prime Sedan</h1>
+
+                            <h3 class="car-subtitle">Premium Car</h3>
+
+                            <img src="src/assets/img/Bezza%20Prime%20Sedan.png" alt="" class="content-img">
+
+                            <div class="featured-car-card">
+
+                                <ul class="card-list">
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="people-outline"></ion-icon>
+
+                                        <span class="card-item-text">4 People</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="flash-outline"></ion-icon>
+
+                                        <span class="card-item-text">Auto</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="speedometer-outline"></ion-icon>
+
+                                        <span class="card-item-text">Diesel / 1-litre</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                        <span class="card-item-text">Automatic</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-price-wrapper">
+
+                                    <p class="card-price">
+                                        <strong>$120,330.00</strong> / monthly
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="button car-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="car-card mix luxury">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="car-title">BMW i8</h1>
+
+                            <h3 class="car-subtitle">Luxury Car</h3>
+
+                            <img src="src/assets/img/featured3.png" alt="" class="content-img">
+
+                            <div class="featured-car-card">
+
+                                <ul class="card-list">
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="people-outline"></ion-icon>
+
+                                        <span class="card-item-text">5 People</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="flash-outline"></ion-icon>
+
+                                        <span class="card-item-text">Auto</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="speedometer-outline"></ion-icon>
+
+                                        <span class="card-item-text">Diesel / 1-litre</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                        <span class="card-item-text">Automatic</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-price-wrapper">
+
+                                    <p class="card-price">
+                                        <strong>$300,000.00 </strong> / monthly
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button car-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="car-card mix logo6">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="car-title">Toyota Axio NKR 165</h1>
+
+                            <h3 class="car-subtitle">Premium Car</h3>
+
+                            <img src="src/assets/img/featured5.png" alt="" class="content-img">
+
+                            <div class="featured-car-card">
+
+                                <ul class="card-list">
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="people-outline"></ion-icon>
+
+                                        <span class="card-item-text">5 People</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="flash-outline"></ion-icon>
+
+                                        <span class="card-item-text">Auto</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="speedometer-outline"></ion-icon>
+
+                                        <span class="card-item-text">Diesel / 1-litre</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                        <span class="card-item-text">Automatic</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-price-wrapper">
+
+                                    <p class="card-price">
+                                        <strong>$155,760.00</strong> / monthly
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button car-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="car-card mix logo6">
+                            <div class="shape shape-smaller"></div>
+
+                            <h1 class="car-title">Mercedes</h1>
+
+                            <h3 class="car-subtitle">Luxury Car</h3>
+
+                            <img src="src/assets/img/featured2.png" alt="" class="content-img">
+
+                            <div class="featured-car-card">
+
+                                <ul class="card-list">
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="people-outline"></ion-icon>
+
+                                        <span class="card-item-text">5 People</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="flash-outline"></ion-icon>
+
+                                        <span class="card-item-text">Auto</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="speedometer-outline"></ion-icon>
+
+                                        <span class="card-item-text">Diesel / 1-litre</span>
+                                    </li>
+
+                                    <li class="card-list-item">
+                                        <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                        <span class="card-item-text">Automatic</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-price-wrapper">
+
+                                    <p class="card-price">
+                                        <strong>$300,000.00 </strong> / monthly
+                                    </p>
+                                </div>
+                            </div>
+
+                            <button class="button car-button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+
+
+                <section class="col">
+
+                    <form class="container-fluid mt-3"style="color: white">
+
+                        <h2>Make Your Trip With Us</h2>
+
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label " for="selectCustomer">PickUp Date</label>
+<!--                            <div class="col-sm-3">-->
+<!--                                <select aria-label="Default select example" class="form-select " id="selectCustomer"></select>-->
+<!--                            </div>-->
+
+<!--                            <label class="col-sm-3 col-form-label" for="cusIdPlaceOrder">Return Date</label>-->
+<!--                            <div class="col-sm-3">-->
+<!--                                <input class="form-control" id="cusIdPlaceOrder" type="text">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="row mb-3">-->
+<!--                            <label class="col-sm-3 col-form-label " for="selectCustomer">PickUp Time</label>-->
+<!--                            <div class="col-sm-3">-->
+<!--                                <select aria-label="Default select example" class="form-select " id="selectCustomer"></select>-->
+<!--                            </div>-->
+
+<!--                            <label class="col-sm-3 col-form-label" for="cusIdPlaceOrder">Return Time</label>-->
+<!--                            <div class="col-sm-3">-->
+<!--                                <input class="form-control" id="cusIdPlaceOrder" type="text">-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+
+<!--                        <div class="row mb-3">-->
+<!--                            <label class="col-sm-3 col-form-label " for="selectCustomer">Select A Car Type</label>-->
+<!--                            <div class="col-sm-3">-->
+<!--                                <select aria-label="Default select example" class="form-select " id="selectCustomer"></select>-->
+<!--                            </div>-->
+
+<!--                            <label class="col-sm-3 col-form-label" for="cusIdPlaceOrder">Select A Car</label>-->
+<!--                            <div class="col-sm-3">-->
+<!--                                <input class="form-control" id="cusIdPlaceOrder" type="text">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="row mb-3">-->
+<!--                            <label class="col-sm-3 col-form-label " for="selectCustomer">Driver</label>-->
+<!--                            <div class="col-sm-3">-->
+<!--                                <select aria-label="Default select example" class="form-select " id="selectCustomer"></select>-->
+<!--                            </div>-->
+<!--                            <button class="col-sm-3 btn btn-success " id="addCart" type="button">Add</button>-->
+<!--                        </div>-->
+                    </form>
+                </section>
+            </section>
+
+
+
+
+    <script src="src/assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="src/services/LoginForm.js"></script>
+    <script src="src/services/User.js"></script>
+    <script src="src/assets/js/mixitup.min.js"></script>
+    <script src="src/services/main.js"></script>
+
+
+</main>
+</body>
+</html>
