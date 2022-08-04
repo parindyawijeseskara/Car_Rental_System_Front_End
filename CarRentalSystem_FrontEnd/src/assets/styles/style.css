@@ -1,69 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&display=swap');
 
 
-/**Navbar and HomePage*/
-.navbar-brand{
-    font-size: 24px;
-    right: 30px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
 }
-.navbar a{
-    padding: 12px;
-    color: white;
-    text-decoration: none;
+
+.home{
+    width: 100%;
+    height: 90vh;
     background-color: black;
+    /*background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));*/
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-.nav a {
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.logo{
+    width: 80px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+.home-content{
+    position: absolute;
+    text-align: center;
+
+}
+.home-content h1{
+    font-size: 160px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.home-content h1:hover{
+    -webkit-text-stroke: 2px #ffffff;
+    color: transparent;
+}
+.home-content a {
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
     font-size: 24px;
-    padding: 10px;
-    color: white;
-    font-family: 'Lobster Two', cursive;
+    border: 2px solid #ffffff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
-.content{
-    height: 70vh;
-}
-
-.content h1{
-    font-size: 45px;
-    padding: 40px;
-    color: #249876;
-}
-
-.content h2{
-    color: white;
-    font-size: 32px;
-    font-weight: 200;
-    line-height: 50px;
-    /*margin: 60px 0;*/
-    margin-left: 65px;
-    font-family: 'Lobster Two', cursive;
-}
-
-.car-image{
-    width: 50%;
+back-video{
     position: absolute;
-    right: 40px;
-    bottom: 50px;
-    animation: run 2s linear 1;
-    /*background-color: black;*/
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
-
-.car-img{
-
-    width: 50%;
-    position: absolute;
-    right: 80px;
-    bottom: 50px;
-
-    /*background-color: black;*/
-}
-
-@keyframes run {
-    0%{
-        transform: translate(-100px,-100px);
-    }
-    100%{
-        transform: translate(0px,0px);
-    }
+.back-video{
+    width: 100%;
+    height: 90%;
+    margin: auto;
 }
 
 /*Login Page */
@@ -78,7 +95,7 @@
     width: 100%;
 
     height: 100vh;
-    background-color: rosybrown;
+    background-color: sandybrown;
     overflow: hidden;
 }
 
@@ -88,7 +105,7 @@
     width: 2000px;
     height: 2000px;
     border-radius: 50%;
-    background-color: #1C1C1C;
+    background-color: rosybrown;
     /*background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);*/
     top: -10%;
     right: 48%;
@@ -236,7 +253,7 @@ form.sign-up-form{
     top: 0;
     left: 0;
     display: grid;
-    background-color: black;
+    background-color: mediumpurple;
     /*background-color: #6c757d;*/
     grid-template-columns: repeat(2, 1fr);
 }
@@ -669,6 +686,7 @@ form.sign-up-form{
 .car-button i{
     font-size: 1.25rem;
 }
+
 /*!*.car-card:hover.featured-img{*!*/
 /*!*    transform: translateX(-.25rem);*!*/
 
